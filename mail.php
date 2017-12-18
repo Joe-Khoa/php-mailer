@@ -1,5 +1,5 @@
 	<?php	
-	
+	header('Content-Type: text/html; charset=utf-8');
 	function Mailer($mail_nhan,$ten_nhan,$tieude,$tomtat,$noidung)
 	{
 		// Khai báo thư viên phpmailer
@@ -8,7 +8,7 @@
 		 
 		// Khai báo tạo PHPMailer
 		$mail = new PHPMailer();
-		$mail->Charset = "UTF-8";
+		$mail->CharSet = "UTF-8";
 		//Khai báo gửi mail bằng SMTP
 		$mail->IsSMTP();
 		//Tắt mở kiểm tra lỗi trả về, chấp nhận các giá trị 0 1 2
